@@ -1,5 +1,6 @@
 //
 // DLL.cpp 
+// 
 // Written by Brady Sheehan
 // Implementation of a doubly linked list
 //
@@ -28,7 +29,6 @@ protected:
 	DLLNode<T> *head, *tail;
 public:
 	DLL() {
-		cout << "default called" << endl;
 		head = tail = 0;
 	}
 	void insertAtHead(T t) {
