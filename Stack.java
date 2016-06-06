@@ -39,15 +39,8 @@ public class Stack<E>{
 		return stackPointer==0?true:false; 
 	}
 
-	public void print(){
-		//System.out.print("Stack contains: ");
-//		for(int i = 0; i < stack.length - 1; i ++){
-//			//System.out.print(stack[i] + ", ");
-//			System.out.print(stack[i]);
-//		}
-//		System.out.print(stack[stack.length - 1] + "." + "\n");
+	public String toString(){
 		for(int i = 0; i < stack.length ; i ++){
-			//System.out.print(stack[i] + ", ");
 			System.out.print(stack[i]);
 		}
 	}
@@ -63,7 +56,7 @@ public class Stack<E>{
 		for(int i = 0; i < 30; i++){
 			intStack.push(29 - i);
 		}
-		intStack.print();
+		System.out.println(intStack);
 		System.out.println("Popped: "+ intStack.pop());
 		int poppedValue = intStack.pop();
 		System.out.println("poppedValue = " + poppedValue);
